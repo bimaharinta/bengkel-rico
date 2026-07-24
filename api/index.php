@@ -14,4 +14,10 @@ $_ENV['CACHE_DRIVER'] = 'array';
 $_ENV['SESSION_DRIVER'] = 'cookie';
 $_ENV['LOG_CHANNEL'] = 'stderr';
 
+// Fallback jika user lupa memasukkan di pengaturan Vercel
+$_ENV['APP_KEY'] = $_ENV['APP_KEY'] ?? 'base64:jU20bM8YyYI/gVqL6YF/p7k9VwT1J0aO9+P4z+Q/j/k=';
+$_ENV['APP_DEBUG'] = $_ENV['APP_DEBUG'] ?? 'true';
+$_ENV['DB_CONNECTION'] = $_ENV['DB_CONNECTION'] ?? 'sqlite';
+$_ENV['DB_DATABASE'] = $_ENV['DB_DATABASE'] ?? '/tmp/database.sqlite';
+
 require __DIR__ . '/../public/index.php';
