@@ -18,6 +18,7 @@ $vercelVars = [
     'APP_DEBUG' => getenv('APP_DEBUG') ?: 'true',
     'DB_CONNECTION' => getenv('DB_CONNECTION') ?: 'sqlite',
     'DB_DATABASE' => getenv('DB_DATABASE') ?: '/tmp/database.sqlite',
+    'ASSET_URL' => getenv('ASSET_URL') ?: '/public',
 ];
 
 foreach ($vercelVars as $key => $value) {
