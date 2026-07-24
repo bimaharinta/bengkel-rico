@@ -27,12 +27,12 @@ export default function Layout({ children }) {
                 </div>
               </Link>
               {/* Location Info */}
-              <a href="https://maps.app.goo.gl/JfC4R6i7ALkdoLWb6" target="_blank" rel="noreferrer" className="hidden lg:flex items-center gap-2 border-l-2 border-gray-200 pl-3 group cursor-pointer">
-                <svg className="w-5 h-5 text-secondary flex-shrink-0 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <a href="https://maps.app.goo.gl/JfC4R6i7ALkdoLWb6" target="_blank" rel="noreferrer" className="flex items-center gap-2 border-l-2 border-gray-200 pl-3 group cursor-pointer">
+                <svg className="w-5 h-5 md:w-6 md:h-6 text-secondary flex-shrink-0 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
-                <span className="text-[10px] sm:text-xs font-bold text-gray-500 group-hover:text-secondary uppercase tracking-wider leading-snug transition-colors">
+                <span className="hidden lg:block text-[10px] sm:text-xs font-bold text-gray-500 group-hover:text-secondary uppercase tracking-wider leading-snug transition-colors">
                   Pandaan, Pasuruan <br/> Jawa Timur, Indonesia
                 </span>
               </a>
